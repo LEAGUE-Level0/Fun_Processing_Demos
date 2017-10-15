@@ -18,7 +18,7 @@ void settings() {
 void setup() {
   noStroke();
   for (int i = 0; i < balls.length; i++) {
-    balls[i] = new Ball(new PVector(random(width), random(height), random(width)), new PVector(random(-VEL_RANGE, VEL_RANGE), random(-VEL_RANGE, VEL_RANGE), random(-VEL_RANGE, VEL_RANGE)), random(1, 25), random(1, 15));
+    balls[i] = new Ball(new PVector(random(width), random(height), random(-width)), new PVector(random(-VEL_RANGE, VEL_RANGE), random(-VEL_RANGE, VEL_RANGE), random(-VEL_RANGE, VEL_RANGE)), random(1, 25), random(1, 15));
   }
   frameTime = System.currentTimeMillis();
 }
